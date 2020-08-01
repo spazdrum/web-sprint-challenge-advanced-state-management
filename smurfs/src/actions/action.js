@@ -18,7 +18,8 @@ export const fetchData = () => (dispatch) => {
     })
     .catch((err) => {
       dispatch({
-        type: FETCH_ERROR
+        type: FETCH_ERROR,
+        payload: err
       });
     });
 };
