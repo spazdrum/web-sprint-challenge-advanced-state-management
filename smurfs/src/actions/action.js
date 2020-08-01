@@ -8,7 +8,7 @@ export const ADD_SMURF = "ADD_SMURF";
 export const ADD_SMURF_SUCCESS = "ADD_SMURF_SUCCESS";
 export const ADD_SMURF_ERROR = "ADD_SMURF_ERROR";
 
-export const fetchData = () => {
+export const fetchData = () => (dispatch) => {
   dispatch({ type: FETCH_DATA });
   axios
     .get("http://localhost:3333/smurfs")
@@ -18,8 +18,7 @@ export const fetchData = () => {
     })
     .catch((err) => {
       dispatch({
-        type: FETCH_ERROR,
-        payload: res.data,
+        type: FETCH_ERROR
       });
     });
 };
