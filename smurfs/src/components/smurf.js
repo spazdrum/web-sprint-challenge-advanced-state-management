@@ -3,7 +3,7 @@ import Card from "./Card";
 import { fetchData } from "../actions/action";
 import { connect } from "react-redux";
 
-const smurf = (props) => {
+const Smurf = (props) => {
   const fetchSmurfs = (e) => {
     e.preventDefault();
     props.fetchData();
@@ -26,4 +26,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, {data})(Smurf)
+export default connect(mapStateToProps, {fetchData})(Smurf)
