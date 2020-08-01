@@ -52,7 +52,7 @@ const Form = (props) => {
           onChange={handleChanges}
         />
         <br />
-        <input type="submit" onClick={handleSubmit} value="submit" />
+        <input type="submit" onClick={handleSubmit} value="Submit" />
         <button onClick={handleDelete}>Delete</button>
       </form>
     </div>
