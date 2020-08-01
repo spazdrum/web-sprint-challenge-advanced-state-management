@@ -1,5 +1,10 @@
 import axios from "axios";
 
+export const FETCH_DATA = "FETCH_DATA";
+export const FETCH_SUCCESS = "FETCH_SUCCESS";
+export const FETCH_ERROR = "FETCH_ERROR";
+
+export const ADD_SMURF = "ADD_SMURF";
 export const ADD_SMURF_SUCCESS = "ADD_SMURF_SUCCESS";
 export const ADD_SMURF_ERROR = "ADD_SMURF_ERROR";
 
